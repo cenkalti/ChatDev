@@ -84,8 +84,6 @@ class OpenAIModel(ModelBackend):
                 response.usage.total_tokens, cost
             )
         )
-        if not isinstance(response, Dict):
-            raise RuntimeError("Unexpected return from OpenAI API")
         return response
 
 
