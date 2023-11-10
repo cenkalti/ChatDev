@@ -23,4 +23,4 @@ ENV OPENAI_API_KEY=your_OpenAI_API_key
 EXPOSE 8000
 
 # Set an entry point that runs a shell for interactive mode
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/usr/local/bin/python", "run.py"]
